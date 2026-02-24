@@ -8,7 +8,7 @@ phases:
       - echo "Installing dependencies..."
       - pip install -r requirements.txt
 
-  prebuild:
+  pre_build:
     commands:
       - echo "Running pre-build commands..."
       - python -m unittest discover -s tests
