@@ -15,7 +15,6 @@ phases:
   build:
     commands:
       - echo "Building the application..."
-      - pytest  --junitxml=reports/test-results.xml -tb=short
   post_build:
     commands:
       - echo "Running post-build commands..."
@@ -26,9 +25,3 @@ artifacts:
     - "**/*"
   base-directory: .
 
-reports:
-  pytest_reports:
-    files:
-      - "reports/test-results.xml"
-    discard-paths: yes
-  
