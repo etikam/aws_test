@@ -11,7 +11,7 @@ phases:
   pre_build:
     commands:
       - echo "Running pre-build commands..."
-      - python test_app
+      - python -m unittest discover -s tests
   build:
     commands:
       - echo "Building the application..."
